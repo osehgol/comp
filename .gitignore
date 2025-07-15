@@ -77,3 +77,9 @@ playwright/.cache/
 debug-setup-page.png
 
 .playground/
+
+# Deployment-specific files
+comp-app.service
+comp-portal.service
+compai.enovox.com.conf
+comp.conf
