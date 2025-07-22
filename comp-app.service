@@ -1,0 +1,14 @@
+[Unit]
+Description=Comp App
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/var/comp/apps/app
+Environment="BETTER_AUTH_URL=http://compai.enovox.com"
+ExecStart=/usr/bin/node /var/comp/node_modules/.bin/next start -p 3000
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
